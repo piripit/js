@@ -11,6 +11,6 @@ const person = {
   },
 };
 person.lang = "momo";
-person.lang = "toto";
+person.lang = "kiki";
 console.log(person.lastName);
 console.log(person.firstName);
