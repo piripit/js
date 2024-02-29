@@ -1,12 +1,16 @@
 const person = {
-  firstName: "John",
-  lastName: "Doe",
-  language: "en",
-  get lang() {
-      return this.lastName;
-  }
+  firstName: "",
+  lastName: "",
+  language: "",
+  set lang(lang) {
+    if (this.lastName === "") {
+      this.lastName = lang;
+    } else {
+      this.firstName = lang;
+    }
+  },
 };
-
-// Affichage de la donnée 
-document.getElementById("demo").innerHTML = person.lang;
-console.log(person.lang);
+person.lang = "momo";
+person.lang = "toto";
+console.log(person.lastName);
+console.log(person.firstName);
